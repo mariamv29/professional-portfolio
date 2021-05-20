@@ -7,64 +7,92 @@
 /*APPLY STYLES TO BODY*/
 
 body {
-  background-color: #E7EFF0;
+  background-color: #fafafa;
   font-family: papyrus;
 }
 
 /* apply styles to <header> */
 header {
-  padding: 20px 50px;
-  background-color: rgb(32, 32, 32);
+  padding: 35px 50px;
+  background-image: url("../assets/images/dandelion.jpg");
+  background-size: cover;
   position: -webkit-sticky;
   position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
 }
-header h1 {
-  font-size: 70px;
-  color: #E7EFF0;
+header a {
+  text-decoration: none;
+}
 
+header h1 {
+  font-size: 60px;
+  color: #fafafa;
+  text-decoration-line: overline;
+  text-shadow: 0 0 10px rgb(100, 89, 89);
 }
 
 header h2 {
   font-size: 35px;
-  color: #E7EFF0;
-}
-
-header nav {
-  margin: 7px 0;
 }
 
 header nav ul {
   font-size: 25px;
   list-style: none;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
-  text-align: right;
+  justify-content: space-between;
 }
 
 header nav ul li a {
-  font-style: oblique;
   font-weight: bold;
-  color: #E7EFF0;
+  color: #fafafa;
+  text-decoration-line: overline;
+  text-shadow: 0 0 5px rgb(100, 89, 89);
+}
+header nav ul li a:hover {
+  background: rgb(100, 89, 89);
+  border-radius: 15px;
 }
 
+.sub-title {
+  position: relative;
+  left: 80%;
+}
 
+/*ABOUT ME STYLES*/
+.about-me h2 {
+  font-size: 25;
+  text-decoration-line: overline;
+}
 
+/*MY WORK STYLES*/
+.work-img img {
+  max-width: 30%;
+  box-shadow: 5px 10px 15px rgb(32, 31, 31);
+}
+
+.work-img img:hover {
+  flex-grow: inherit;
+}
+/* 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
-{}
+/* {}
 @media screen and (max-width: 980px) {
   
-}
+} */
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   section {
     padding: 30px 15px;
   }
-}
+} */
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
-@media screen and (max-width: 575px) {
+/* @media screen and (max-width: 575px) {
   .hero-form button {
     width: 100%;
-  }
+  /* } */
