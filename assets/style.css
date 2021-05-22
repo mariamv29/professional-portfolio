@@ -13,7 +13,7 @@ body {
 
 /*STYLES APPLY TO HEADER*/
 header {
-  padding: 35px 50px;
+  padding: 35px 58px;
   background-image: url("../assets/images/dandelion.jpg");
   background-size: cover;
   position: -webkit-sticky;
@@ -21,9 +21,6 @@ header {
   top: 0;
   display: flex;
   justify-content: space-between;
-}
-header a {
-  text-decoration: none;
 }
 
 header h1 {
@@ -43,15 +40,17 @@ header nav ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 header nav ul li a {
+  padding: 30px;
   font-weight: bold;
   color: #fafafa;
   text-decoration-line: overline;
   text-shadow: 0 0 5px rgb(100, 89, 89);
 }
+
 header nav ul li a:hover {
   background: rgb(100, 89, 89);
   border-radius: 15px;
@@ -67,7 +66,7 @@ header nav ul li a:hover {
 .section-title {
   font-size: 48px;
   border-bottom: 1px solid;
-  padding-bottom: 70px;
+  padding: 10px;
   text-align: left;
   margin-left: 33vw;
   width: 70%;
@@ -120,12 +119,17 @@ header nav ul li a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
+  flex-direction: row;
   margin: 0 50px;
 }
 
 .contact-info {
   margin: 33vw;
   list-style-type: none;
+}
+
+.contact-info h5 {
+  font-size: 16px;
 }
 
 /*FOOTER STYLES START*/
