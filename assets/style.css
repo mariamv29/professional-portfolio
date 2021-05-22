@@ -11,7 +11,7 @@ body {
   font-family: papyrus;
 }
 
-/* apply styles to <header> */
+/*STYLES APPLY TO HEADER*/
 header {
   padding: 35px 50px;
   background-image: url("../assets/images/dandelion.jpg");
@@ -27,7 +27,7 @@ header a {
 }
 
 header h1 {
-  font-size: 60px;
+  font-size: 40px;
   color: #fafafa;
   text-decoration-line: overline;
   text-shadow: 0 0 10px rgb(100, 89, 89);
@@ -58,25 +58,82 @@ header nav ul li a:hover {
 }
 
 .sub-title {
-  position: relative;
-  left: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+/*SECTION TITLE STYLES*/
+.section-title {
+  font-size: 48px;
+  border-bottom: 1px solid;
+  padding-bottom: 70px;
+  text-align: left;
+  margin-left: 33vw;
+  width: 70%;
 }
 
 /*ABOUT ME STYLES*/
-.about-me h2 {
-  font-size: 25;
-  text-decoration-line: overline;
+.student {
+  width: 50%;
+  margin-left: 33vw;
+  display: flex;
+  justify-content: space-between;
+}
+.student img {
+  width: 30%;
+  flex: 3;
+  order: 1;
+  box-shadow: 5px 10px 15px rgb(32, 31, 31);
+}
+.student-name {
+  font-size: 30px;
+}
+
+.student p {
+  flex: 1;
+  order: 2;
+}
+
+.about {
+  margin: 20px;
 }
 
 /*MY WORK STYLES*/
-.work-img img {
-  max-width: 30%;
+
+.work img {
+  display: flex;
+  flex: wrap;
+  justify-content: center;
+  margin-left: 33vw;
+  max-width: 40%;
+  margin-top: 5vw;
   box-shadow: 5px 10px 15px rgb(32, 31, 31);
 }
 
-.work-img img:hover {
-  flex-grow: inherit;
+.work img:hover {
+  border-image-width: 10px;
 }
+
+/*CONTACT STYLES START*/
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin: 0 50px;
+}
+
+.contact-info {
+  margin: 33vw;
+  list-style-type: none;
+}
+
+/*FOOTER STYLES START*/
+.footer {
+  padding: 30px 35px;
+  background-color: #c1aaa2;
+}
+
 /* 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 /* {}
