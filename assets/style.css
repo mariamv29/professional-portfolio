@@ -13,14 +13,14 @@ body {
 
 /*STYLES APPLY TO HEADER*/
 header {
-  padding: 35px 58px;
+  padding: 20px 35px;
   background-image: url("../assets/images/dandelion.jpg");
+  display: flex;
+  flex-wrap: wrap;
   background-size: cover;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  display: flex;
-  justify-content: space-between;
 }
 
 header h1 {
@@ -36,15 +36,15 @@ header h2 {
 
 header nav ul {
   font-size: 25px;
-  list-style: none;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  list-style: none;
+  margin-left: 30vw;
 }
 
 header nav ul li a {
-  padding: 30px;
+  padding: 10px 15px;
   font-weight: bold;
   color: #fafafa;
   text-decoration-line: overline;
@@ -60,6 +60,7 @@ header nav ul li a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
+  margin: 3vw;
 }
 
 /*SECTION TITLE STYLES*/
@@ -77,14 +78,16 @@ header nav ul li a:hover {
   width: 50%;
   margin-left: 33vw;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
 }
+
 .student img {
   width: 30%;
-  flex: 3;
-  order: 1;
   box-shadow: 5px 10px 15px rgb(32, 31, 31);
 }
+
 .student-name {
   font-size: 30px;
 }
@@ -99,7 +102,6 @@ header nav ul li a:hover {
 }
 
 /*MY WORK STYLES*/
-
 .work img {
   display: flex;
   flex: wrap;
@@ -120,7 +122,8 @@ header nav ul li a:hover {
   flex-wrap: wrap;
   justify-content: flex-end;
   flex-direction: row;
-  margin: 0 50px;
+  margin: 0 auto 0 auto;
+  padding: 30px;
 }
 
 .contact-info {
@@ -130,6 +133,7 @@ header nav ul li a:hover {
 
 .contact-info h5 {
   font-size: 16px;
+  font-weight: bold;
 }
 
 /*FOOTER STYLES START*/
@@ -140,20 +144,43 @@ header nav ul li a:hover {
 
 /* 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
-/* {}
+
 @media screen and (max-width: 980px) {
-  
-} */
-
-/* MEDIA QUERY FOR TABLETS AND SMALLER */
-/* @media screen and (max-width: 768px) {
-  section {
-    padding: 30px 15px;
+  header {
+    justify-content: center;
+    position: relative;
+    padding: 0px 100px 0px 100px;
   }
-} */
+  header h1 {
+    font-size: 40px;
+    color: black;
+    text-align: center;
+  }
 
-/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
-/* @media screen and (max-width: 575px) {
-  .hero-form button {
-    width: 100%;
-  /* } */
+  header nav ul {
+    margin-top: 20px;
+    width: max-content;
+    justify-content: center;
+  }
+
+  header nav ul li a {
+    font-size: 16px;
+    color: black;
+  }
+
+  .sub-title {
+    justify-content: center;
+    font-size: 16px;
+  }
+
+  .student {
+  }
+
+  .student-img {
+    justify-self: center;
+  }
+  .section-title {
+    width: 80%;
+    font-size: 33px;
+  }
+}
