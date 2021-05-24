@@ -17,6 +17,7 @@ header {
   background-image: url("../assets/images/dandelion.jpg");
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   background-size: cover;
   position: -webkit-sticky;
   position: sticky;
@@ -37,10 +38,8 @@ header h2 {
 header nav ul {
   font-size: 25px;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   list-style: none;
-  margin-left: 30vw;
 }
 
 header nav ul li a {
@@ -65,27 +64,31 @@ header nav ul li a:hover {
 
 /*SECTION TITLE STYLES*/
 .section-title {
+  display: flex;
+  flex-wrap: wrap;
   font-size: 48px;
   border-bottom: 1px solid;
-  padding: 10px;
+  padding: 15px;
   text-align: left;
   margin-left: 33vw;
+  margin-top: 10%;
   width: 70%;
 }
 
 /*ABOUT ME STYLES*/
 .student {
-  width: 50%;
+  width: 60%;
   margin-left: 33vw;
+  padding: 0px 50px;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row-reverse;
+  flex-wrap: wrap-reverse;
   justify-content: space-evenly;
 }
 
 .student img {
-  width: 30%;
+  width: 40%;
   box-shadow: 5px 10px 15px rgb(32, 31, 31);
+  margin: 10px auto 10px auto;
 }
 
 .student-name {
@@ -95,6 +98,7 @@ header nav ul li a:hover {
 .student p {
   flex: 1;
   order: 2;
+  margin: 10px auto 10px auto;
 }
 
 .about {
@@ -106,14 +110,15 @@ header nav ul li a:hover {
   display: flex;
   flex: wrap;
   justify-content: center;
+  padding: 5px 5px;
   margin-left: 33vw;
-  max-width: 40%;
+  max-width: 45%;
   margin-top: 5vw;
   box-shadow: 5px 10px 15px rgb(32, 31, 31);
 }
 
 .work img:hover {
-  border-image-width: 10px;
+  background-color: #c1aaa2;
 }
 
 /*CONTACT STYLES START*/
@@ -128,12 +133,18 @@ header nav ul li a:hover {
 
 .contact-info {
   margin: 33vw;
+  margin-top: 70px;
+  margin-bottom: 85px;
   list-style-type: none;
+  font-weight: bolder;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 10px 15px;
 }
 
-.contact-info h5 {
-  font-size: 16px;
-  font-weight: bold;
+.contact-info li a {
+  padding: 5px 5px;
 }
 
 /*FOOTER STYLES START*/
@@ -142,24 +153,28 @@ header nav ul li a:hover {
   background-color: #c1aaa2;
 }
 
+.footer h3 {
+  text-shadow: 5px 10px 15px rgb(32, 31, 31);
+}
+
 /* 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 
 @media screen and (max-width: 980px) {
   header {
+    padding-bottom: 0;
     justify-content: center;
     position: relative;
-    padding: 0px 100px 0px 100px;
   }
+
   header h1 {
-    font-size: 40px;
-    color: black;
+    width: 100%;
     text-align: center;
   }
 
   header nav ul {
     margin-top: 20px;
-    width: max-content;
+    width: 100%;
     justify-content: center;
   }
 
@@ -173,14 +188,31 @@ header nav ul li a:hover {
     font-size: 16px;
   }
 
-  .student {
-  }
+  /* .student-img {
+    flex: 0 32%;
+    margin-right: 0;
+    margin-top: 5, px;
+    margin-bottom: 5px; */
+}
+.section-title {
+  font-size: 33px;
+  border-bottom: 1px solid;
+  text-align: center;
+  margin: 18vw;
+  margin-bottom: 0%;
+  margin-top: 5vw;
+}
 
-  .student-img {
-    justify-self: center;
-  }
-  .section-title {
-    width: 80%;
-    font-size: 33px;
+.student div {
+  justify-content: center;
+}
+
+.contact-info {
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 768) {
+  .student {
+    justify-content: space-around;
   }
 }
