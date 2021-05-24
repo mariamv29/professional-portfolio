@@ -106,14 +106,21 @@ header nav ul li a:hover {
 }
 
 /*MY WORK STYLES*/
-.work img {
+.myworkSection {
   display: flex;
-  flex: wrap;
-  justify-content: center;
-  padding: 5px 5px;
+  flex-direction: column;
+}
+
+.images {
+  display: flex;
+  flex-direction: row;
+  max-width: 50rem;
+}
+
+.work img {
   margin-left: 33vw;
-  max-width: 45%;
-  margin-top: 5vw;
+  padding: 5px 5px;
+  max-width: 30%;
   box-shadow: 5px 10px 15px rgb(32, 31, 31);
 }
 
@@ -143,10 +150,6 @@ header nav ul li a:hover {
   padding: 10px 15px;
 }
 
-.contact-info li a {
-  padding: 5px 5px;
-}
-
 /*FOOTER STYLES START*/
 .footer {
   padding: 30px 35px;
@@ -157,7 +160,6 @@ header nav ul li a:hover {
   text-shadow: 5px 10px 15px rgb(32, 31, 31);
 }
 
-/* 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 
 @media screen and (max-width: 980px) {
@@ -187,12 +189,6 @@ header nav ul li a:hover {
     justify-content: center;
     font-size: 16px;
   }
-
-  /* .student-img {
-    flex: 0 32%;
-    margin-right: 0;
-    margin-top: 5, px;
-    margin-bottom: 5px; */
 }
 .section-title {
   font-size: 33px;
@@ -202,17 +198,25 @@ header nav ul li a:hover {
   margin-bottom: 0%;
   margin-top: 5vw;
 }
-
-.student div {
-  justify-content: center;
+.student-bio {
+  text-align: center;
 }
 
 .contact-info {
   justify-content: space-around;
 }
 
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768) {
   .student {
-    justify-content: space-around;
+    text-align: center;
+  }
+
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+
+  @media screen and (max-width: 575px) {
+    .contact-info div {
+      text-align: center;
+    }
   }
 }
