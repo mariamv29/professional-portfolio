@@ -106,28 +106,19 @@ header nav ul li a:hover {
 }
 
 /*MY WORK STYLES*/
-.myworkSection {
-  display: flex;
-  flex-direction: column;
+
+#my-work-tiles {
+  font-size: 25px;
+ padding: 5px 5px;;
 }
 
-.images {
-  display: flex;
-  flex-direction: row;
-  max-width: 50rem;
-}
-
-.work img {
-  margin-left: 33vw;
-  padding: 5px 5px;
-  max-width: 30%;
-  box-shadow: 5px 10px 15px rgb(32, 31, 31);
-}
-
-.work img:hover {
+#my-work-tiles is-child box:hover {
   background-color: #c1aaa2;
-}
+} 
 
+#test {
+  margin-left: 33vw;
+}
 /*CONTACT STYLES START*/
 .contact {
   display: flex;
@@ -215,8 +206,11 @@ header nav ul li a:hover {
   /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 
   @media screen and (max-width: 575px) {
+    .student {
+      flex-basis: 100%;
+    }
     .contact-info div {
-      text-align: center;
+      flex-basis: 100%;
     }
   }
 }
