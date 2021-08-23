@@ -107,9 +107,9 @@ header nav ul li a:hover {
 
 /*MY WORK STYLES*/
 
-#my-work-tiles {
+ #my-work-tiles {
   font-size: 25px;
- padding: 5px 5px;;
+ padding: 5px 5px;
 }
 
 #my-work-tiles is-child box:hover {
@@ -193,9 +193,9 @@ header nav ul li a:hover {
   text-align: center;
 }
 
-.contact-info {
+/* .contact-info {
   justify-content: space-around;
-}
+} */
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768) {
