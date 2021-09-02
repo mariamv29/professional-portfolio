@@ -7,102 +7,108 @@
 /*APPLY STYLES TO BODY*/
 
 body {
-  background-color: #fafafa;
+  background-color: #bed2d7;
   font-family: papyrus;
 }
 
 /*STYLES APPLY TO HEADER*/
 header {
   padding: 20px 35px;
-  background-image: url("../assets/images/dandelion.jpg");
+  background-color: var(--tertiary-color);
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  background-size: cover;
+  flex-wrap: wrap;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  background-image: url("../assets/images/beach.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 80%;
+  z-index: 9999;
 }
 
+
 header h1 {
-  font-size: 40px;
+  font-size: 50px;
   color: #fafafa;
-  text-decoration-line: overline;
+  text-decoration-line:underline;
   text-shadow: 0 0 10px rgb(100, 89, 89);
 }
 
-header h2 {
-  font-size: 35px;
-}
-
 header nav ul {
+  margin-bottom: 10%;
   font-size: 25px;
   display: flex;
   flex-wrap: wrap;
   list-style: none;
 }
 
-header nav ul li a {
+header  a {
   padding: 10px 15px;
-  font-weight: bold;
   color: #fafafa;
   text-decoration-line: overline;
   text-shadow: 0 0 5px rgb(100, 89, 89);
 }
 
 header nav ul li a:hover {
-  background: rgb(100, 89, 89);
+  background: rgb(152, 202, 222);
+  border-radius: 2px;
+}
+
+
+
+/*SECTION TITLE STYLES*/
+
+/*ABOUT ME STYLES*/
+
+#student {
+  align-items: flex-start;
+  background-image: url("../assets/images/beach.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-attachment: fixed;
+  background-position: 80%;
+}
+
+/* Hero Style End */
+
+section {
+  padding: 60px;
+}
+.student-form {
+  align-items: flex-start;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border: black; 
+  padding: 15px 5px ;
+  margin: 3.5%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
 }
 
-.sub-title {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  margin: 3vw;
+p {
+  backdrop-filter:blur(50px);
+  display: block;
+  /* width: 35%; */
+  text-align: right;
+  margin: 3.5%;
+  color:#fafafa;
+  font-size: 18px;
+  /* line-height: 1.2; */
 }
-
-/*SECTION TITLE STYLES*/
-.section-title {
-  display: flex;
-  flex-wrap: wrap;
-  font-size: 48px;
-  border-bottom: 1px solid;
-  padding: 15px;
-  text-align: left;
-  margin-left: 33vw;
-  margin-top: 10%;
-  width: 70%;
-}
-
-/*ABOUT ME STYLES*/
-.student {
-  width: 60%;
-  margin-left: 33vw;
-  padding: 0px 50px;
-  display: flex;
-  flex-wrap: wrap-reverse;
-  justify-content: space-evenly;
-}
-
-.student img {
+.student-form img {
   width: 40%;
-  box-shadow: 5px 10px 15px rgb(32, 31, 31);
-  margin: 10px auto 10px auto;
+  height: 20%;
 }
 
-.student-name {
-  font-size: 30px;
-}
-
-.student p {
-  flex: 1;
-  order: 2;
-  margin: 10px auto 10px auto;
-}
-
-.about {
-  margin: 20px;
+section h2 {
+color: #fafafa;
+  font-size: 33px ;
 }
 
 /*MY WORK STYLES*/
@@ -143,13 +149,12 @@ header nav ul li a:hover {
 
 /*FOOTER STYLES START*/
 .footer {
+  color: #fafafa;
+  text-shadow: 5px 10px 15px rgb(32, 31, 31);
   padding: 30px 35px;
-  background-color: #c1aaa2;
+  background-image: url('../assets/images/beach.jpg');
 }
 
-.footer h3 {
-  text-shadow: 5px 10px 15px rgb(32, 31, 31);
-}
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 
@@ -193,6 +198,9 @@ header nav ul li a:hover {
   text-align: center;
 }
 
+.student-form {
+  flex: 0 70%;
+}
 /* .contact-info {
   justify-content: space-around;
 } */
