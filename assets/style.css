@@ -147,6 +147,25 @@ color: #fafafa;
   padding: 10px 15px;
 }
 
+
+input, textarea {
+  background-color: rgba(255, 255, 255, 0.75);
+  border: 1px solid var(--secondary-color);
+  display: block;
+  padding: 7px 15px;
+  font-size: 16px;
+  width: 80%;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+.button {
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
 /*FOOTER STYLES START*/
 .footer {
   color: #fafafa;
