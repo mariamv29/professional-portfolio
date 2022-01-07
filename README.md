@@ -8,6 +8,7 @@ Professional portfolio is a personal portfolio to show case web-development skil
 ![127 0 0 1_5500_index html](https://user-images.githubusercontent.com/83253575/119295998-c16aaf80-bc1d-11eb-9e25-0ec91fb2039a.png)
 
 ## Deployment 
+[Link](https://mariamv29.github.io/professional-portfolio/)
 
 
 ## User Story
